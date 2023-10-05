@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bipin Paudel</title>
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Include your custom CSS if needed -->
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Your CSS code here */
+
+      /* All fonts poppins */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      /* Custom CSS */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="bg-white">
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <div>
+          <h1 class="text-2xl font-semibold text-black">Bipin Paudel</h1>
+        </div>
+        <nav class="hidden lg:block">
+          <ul class="flex space-x-4">
+            <li><a href="#about" class="text-black">About</a></li>
+            <li><a href="#projects" class="text-black">Projects</a></li>
+            <li><a href="#skills" class="text-black">Skills</a></li>
+            <li><a href="#contact" class="text-black">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Hamburger Menu -->
+        <div class="lg:hidden">
+          <button id="toggleNav" class="text-black">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+          <ul
+            id="mobileNav"
+            class="hidden absolute top-16 right-0 bg-white shadow-lg mt-2 w-32 space-y-2"
+          >
+            <li>
+              <a href="#about" class="block px-4 py-2 text-black">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="block px-4 py-2 text-black"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="block px-4 py-2 text-black">Skills</a>
+            </li>
+            <li>
+              <a href="#contact" class="block px-4 py-2 text-black">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+
+    <section
+      class="bg-cover bg-center h-screen flex flex-col lg:flex-row relative"
+      style="background-image: url('your-background-image.jpg')"
+    >
+      <div class="absolute inset-0"></div>
+      <div
+        class="container mx-auto flex items-center justify-center flex-1 text-white"
+      >
+        <div class="lg:text-left px-6 lg:px-16">
+          <h1
+            class="text-4xl text-black md:text-5xl lg:text-6xl font-extrabold mb-4"
+          >
+            Namaskar , I'm Bipin Paudel
+          </h1>
+          <p
+            class="text-md text-justify text-black md:text-md lg:text-md font-light mb-8"
+          >
+            I am a motivated BCA student with a passion for web development and
+            software engineering. Proficient in HTML, CSS, JavaScript, PHP, and
+            modern web technologies, I aim to create dynamic and responsive web
+            applications. With expertise in Git, MySQL, Laravel, and Chart.js, I
+            am well-equipped to develop robust, data-driven solutions. I'm
+            committed to problem-solving and eager to contribute to innovative
+            projects while continuously expanding my knowledge in computer
+            science.
+          </p>
+
+          <div class="flex space-x-4">
+            <a
+              href="https://github.com/bpnpdl1"
+              target="_blank"
+              class="bg-white text-black border border-black hover:bg-black hover:text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/bpnpdl/"
+              class="bg-white text-black border border-black hover:bg-black hover:text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+              >LinkedIn</a
+            >
+            <a
+              href="./resources/bpnpdlcv.pdf"
+              download
+              class="bg-white text-black border border-black hover:bg-black hover:text-white font-semibold px-6 py-3 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-center flex-1 md:d-hidden">
+        <img
+          src="http://bpnpdl.me/portfolio/images/mypic.png"
+          alt="Bipin Paudel"
+          class="mx-auto"
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-black mb-8">Web Projects</h2>
+
+        <!-- Project Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Project Title 1
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the project goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Project Title 2
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the project goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Project Title 3
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the project goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+          <!-- Add more projects as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Designs -->
+
+    <section class="bg-gray-200 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-black mb-8">Graphic Designs</h2>
+
+        <!-- Design Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Design 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Design Title 1
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the design goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Design 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Design Title 2
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the design goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+
+          <!-- Design 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Design Title 3
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Description of the design goes here.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">View Details</a>
+          </div>
+          <!-- Add more designs as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-black mb-8">Skills</h2>
+
+        <!-- Skill Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Skill 1 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Web Development
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Proficient in HTML, CSS, JavaScript, PHP, and more.
+            </p>
+          </div>
+
+          <!-- Skill 2 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Front-End Development
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Experience with modern front-end frameworks like React and Vue.js.
+            </p>
+          </div>
+
+          <!-- Skill 3 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Back-End Development
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Strong knowledge of server-side technologies including Node.js and
+              Laravel.
+            </p>
+          </div>
+
+          <!-- Skill 4 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Database Management
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Proficient in working with databases such as MySQL and MongoDB.
+            </p>
+          </div>
+
+          <!-- Skill 5 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Graphic Design
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Experience in creating visual designs using tools like Adobe
+              Photoshop and Illustrator.
+            </p>
+          </div>
+
+          <!-- Skill 6 -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-2">
+              Version Control
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Proficient in Git for version control and collaboration on
+              projects.
+            </p>
+          </div>
+          <!-- Add more skills as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="bg-gray-100 py-16">
+      <div class="container mx-auto">
+        <h2 class="text-3xl font-semibold text-black mb-8">Contact</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Contact Information -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-4">
+              Contact Information
+            </h3>
+            <p class="text-gray-600 mb-2">
+              <strong>Name:</strong> Bipin Paudel
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Email:</strong> bipinpaudel6774@gmail.com
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Phone:</strong> +977 9867883929
+            </p>
+            <p class="text-gray-600 mb-2">
+              <strong>Location:</strong> Ratnanagar-9, Chitwan, Nepal
+            </p>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white shadow-lg rounded-lg p-6">
+            <h3 class="text-xl font-semibold text-black mb-4">
+              Send a Message
+            </h3>
+            <form action="#" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-600 font-semibold mb-2"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  class="border border-gray-300 p-2 rounded w-full"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="email"
+                  class="block text-gray-600 font-semibold mb-2"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  class="border border-gray-300 p-2 rounded w-full"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label
+                  for="message"
+                  class="block text-gray-600 font-semibold mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  rows="4"
+                  class="border border-gray-300 p-2 rounded w-full"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-gray-200 py-4">
+      <div class="container mx-auto">
+        <p class="text-center text-gray-600">© 2023 | Bipin Paudel</p>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript to toggle the mobile navigation menu
+      const toggleButton = document.getElementById("toggleNav");
+      const mobileNav = document.getElementById("mobileNav");
+
+      toggleButton.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
